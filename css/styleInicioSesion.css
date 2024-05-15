@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+ 
+}
+
+body {
+      box-sizing: border-box; /*esta propiedad nos sirve para que tome los valores que estamos declarando de la altura y anchura y no nos la sume*/
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      background-color: var(--bg-color);
+      scroll-behavior: smooth;
+  }
+
+  .contenedor {
+    margin: 100px auto;
+    width: 400px;
+  }
+
+  .titulo {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 20px ;
+    font-weight: 400 bold;
+    color: #4d4d4d;
+    text-align: center;
+}
+  
+
+.form_InicioSesion {
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    
+    
+    
+}
+
+.form_InicioSesion input[type=text],
+.form_InicioSesion input[type=password] {
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 25px;
+    color: #a4a4a4;
+}
+
+.form_InicioSesion input[type=text],
+.form_InicioSesion input[type=password] {
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+.form_InicioSesion input[type=text]:focus,
+.form_InicioSesion input[type=password]:focus {
+    border: 2px solid #3895ea;
+}
+
+.form_InicioSesion .btn {
+    margin: auto;
+    background: #3895ea;
+    color: #fff;
+    border: none;
+    font-size: 25px;
+    margin-left: -2px;
+    border-radius: 3px;
+    padding: 15px 40px;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.form_InicioSesion .btn:hover {
+    background: #387bea;
+}

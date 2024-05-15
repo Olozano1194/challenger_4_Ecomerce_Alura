@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Alura Geek</title>
+</head>
+<body>
+    <header>
+        <section class="principal">
+            <div class="contenedor">
+                <div class="logo_img">
+                    <img src="./img/Vector.png" alt="Control de videojuego">
+                    <img src="./img/Alura.png" alt="Logo Alura">
+                    <img src="./img/Geek.png" alt="Logo Geek">
+                </div>
+                <input type="text" placeholder="Qué deseas buscar?" id="btnBuscar">
+            </div>
+            <div class="inicio_sesion">
+                <a href="inicioSesion.html"><button type="submit">Login</button></a>
+            </div>
+        </section>
+    </header>
+
+    
+        <section class="destaque">
+           <!-- <div class="imagen">
+                    <div class="imagen_fondo">
+                        <img src="./img/Hero.png" alt="">
+                    </div> 
+                </div> -->
+
+                <div class="texto">
+                    <h1>Diciembre Promocional</h1>
+                    <h4>Productos seleccionados con 33% de descuento</h4>
+                    <button>Ver Consolas</button>
+                </div>  
+        </section>
+
+        <section class="main">
+            <section class="star_wars">
+                <div class="contenedor">
+                    <div class="prod_titulo">
+                        <div class="titulo">
+                            <h3>Star Wars</h3>
+                        </div>
+                        <div class="mostrar_mas">
+                            <div class="verTodo">
+                                Ver todo<img src="./img/flechita.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <section class="productos" datos-productos> 
+
+                    </section>
+                                
+                </div>
+            </section>
+        
+            <section class="consolas">
+                <div class="contenedor">
+                    <div class="prod_titulo">
+                        <div class="titulo">
+                            <h3>Consolas</h3>
+                        </div>
+                        <div class="mostrar_mas">
+                            <div class="verTodo">
+                                Ver todo<img src="./img/flechita.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <section class="productos" consolas>
+                       <!-- <div class="contenedor_img">
+                            <img src="./img/Consola_primera.png" alt="Imagen 1 starWars">
+                            <img src="./img/Consola_segunda.png" alt="Imagen 2 starWars">
+                            <img src="./img/Consola_tercera.png" alt="Imagen 3 starWars">
+                            <img src="./img/Consola_cuarta.png" alt="Imagen 4 starWars">
+                            <img src="./img/Consola_quinta.png" alt="Imagen 5 starWars">
+                            <img src="./img/Consola_ultima.png" alt="Imagen 6 starWars">
+                        </div>
+                        <div class="descripcion">
+                            <p class="categoria">Control XYZ</p>
+                            <p class="precio">$ 60.00</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                        <div class="descripcion">
+                            <p class="categoria">Control y consola XYZ</p>
+                            <p class="precio">$ 60.00</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                        <div class="descripcion">
+                            <p class="categoria">Consola XYZ</p>
+                            <p class="precio">$ 60.00</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                        <div class="descripcion">
+                            <p class="categoria">Control XYZ</p>
+                            <p class="precio">$ 60.00</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                        <div class="descripcion">
+                            <p class="categoria">Consola XYZ</p>
+                            <p class="precio">$ 60.00</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                        <div class="descripcion">
+                            <p class="categoria">Game Boy Color</p>
+                            <p class="precio">$ 60.00</p>
+                            <a href="#">Ver producto</a>
+                        </div> -->
+                    </section>
+                    <div class="search-result" consolas></div> 
+
+                </div>
+            </section>
+        
+            <section class="diversos">
+                <div class="contenedor">
+                    <div class="prod_titulo">
+                        <div class="titulo">
+                            <h3>Diversos</h3>
+                        </div>
+                        <div class="mostrar_mas">
+                            <div class="verTodo">
+                                Ver todo<img src="./img/flechita.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productos" diversos>
+                <!--        <div class="contenedor_img">
+                            <img src="./img/Diversos_primera.png" alt="Imagen 1 starWars">
+                            <img src="./img/Diversos_segunda.png" alt="Imagen 2 starWars">
+                            <img src="./img/Diversos_tercero.png" alt="Imagen 3 starWars">
+                            <img src="./img/Diversos_cuarta.png" alt="Imagen 4 starWars">
+                            <img src="./img/Diversos_quinta.png" alt="Imagen 5 starWars">
+                            <img src="./img/Diversos_ultima.png" alt="Imagen 6 starWars">
+                        </div>
+                        <div class="descripcion">
+                            <p class="categoria">Camisa Atari</p>
+                            <p class="precio">$ 60.00</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                        <div class="descripcion">
+                            <p class="categoria">Camisa SNES</p>
+                            <p class="precio">$ 60.00</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                        <div class="descripcion">
+                            <p class="categoria">Control y consola XYZ</p>
+                            <p class="precio">$ 60.00</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                        <div class="descripcion">
+                            <p class="categoria">Control y consola XYZ</p>
+                            <p class="precio">$ 60.00</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                        <div class="descripcion">
+                            <p class="categoria">Control y consola XYZ</p>
+                            <p class="precio">$ 60.00</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                        <div class="descripcion">
+                            <p class="categoria">Producto XYZ</p>
+                            <p class="precio">$ 60.00</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </div>  -->
+                </div>
+            </section>
+        
+        </section>
+    
+
+    <footer>
+        <section class="footer">
+            <div class="contenedor">
+                <div class="logo_footer">
+                    <img src="./img/Vector.png" alt="">
+                    <img src="./img/Alura.png" alt="">
+                    <img src="./img/Geek.png" alt="Logo E-comerce">
+                </div>
+            </div>
+        
+            <div class="menu_categorias">
+                <a href="#">Quienes somos</a>
+                <a href="#">Politica de privacidad</a>
+                <a href="#">Programa de fidelidad</a>
+                <a href="#">Nuestras Tiendas</a>
+                <a href="#">Quiero ser franquiciado</a>
+                <a href="#">Anuncie aquí</a>
+            </div>
+        
+            <div class="menu_footer">
+                <div class="titulo">
+                    <p>Hable con nosotros</p>
+                </div> 
+                <div class="menu_input">
+                    <input type="text" placeholder="Nombre">
+                    <textarea name="" id="" placeholder="Escribe tu mensaje"></textarea>
+                    <input class="btn" type="submit" value="Enviar mensaje"></input>
+                </div>
+            </div>
+        </section>
+        
+        <div class="copyright">
+            <p>&copy Desarrollado por Oscar Lozano 2022</p>
+        </div>
+        
+    </footer>
+    <script type="module" src="/controllers/productos-controller.js"></script>
+    <script type="module" src="/controllers/productos-consola.js"></script>
+    <script type="module" src="/controllers/productos-diversos.js"></script>
+    <script src="./js/btnBuscar.js"></script>
+</body>
+</html>
