@@ -1,21 +1,4 @@
-:root {
-    --bg-color: #ebebeb;
-    --input-placeholder: #4d4d4d;
-    --input-bg: #efefef;
-    --texto-destaque: #fff;
-    --azul-destaque: #2a7ae4;
-    --bg-contacto: #eaf2fd;
-   /* font-family: "Open Sans", sans-serif; */
-}
 
-* {
-    margin: 0;
-    padding: 0;
- /*   --webkit-box-sizing: border-box;
-    --moz-box-sizing: border-box; */
-    box-sizing: border-box; 
-
-}
 
 body {
   /*  margin: 0; /*receteamos las margenes para que no no las sume despues*/
@@ -262,91 +245,6 @@ header .inicio_sesion button:hover {
     margin-top: 10px;
 }
 
-
-/*--------------------Consolas-------------*/
-
-/* .main .contenedor_productos .contenedor_img {
-    border-radius: 3px;
-    font-size: 20px;
-    margin-top: 20px;
-    
-}
-
-.imagenes {
-    width: 300px;
-    height: 250px;
-    padding: 10px;
-}
-
-.main .consolas .descripcion {
-    margin-left: 10px;
-    
-}
-
-.main .consolas .descripcion .categoria {
-    font-weight: 400;
-    
-} */
-/*.consolas {
-    background: #f2f2f2;
-    padding: 30px 0;
-}
-
-.consolas .contenedor {
-    overflow: hidden;
-}
-
-.consolas .contenedor .titulo {
-    font-size: 34px;
-    margin-bottom: 40px;
-    font-weight: 300;
-    color: #464646;
-    padding-left: 150px;
-    text-align: left;
-}
-
-.consolas .contenedor .contenedor_Consolas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 120px;
-    padding-right: 120px;
-}
-
-.consolas .contenedor .contenedor_Consolas .contenedor_img {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 3px;
-    font-size: 40px;
-    margin: 0 20px;
-    
-    
-
-}
-
-.consolas .contenedor .contenedor_Consolas .contenedor_img img {
-    width: 186.5px;
-    height: 200px;
-}
-
-
-.consolas .contenedor .contenedor_Consolas .descripcion {
-   padding-left: 20px;
-   padding-right: 20px;
-   
-    
-}
-
-.consolas .contenedor .contenedor_Consolas .descripcion .categoria {
-    font-weight: 400;
-    margin-bottom: 10px;
-   
-    
-}
-
 /*--------------------------Footer-------------------*/
 
 footer .footer {
@@ -483,8 +381,3 @@ footer .footer .menu_footer .menu_input .btn:hover {
     }
 
 }
-
-
-
-
-
