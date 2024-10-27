@@ -1,5 +1,86 @@
+header {
+    height: 30%;
+}
 
+header .principal .contenedor .logo_img img {
+    width: 5rem;    
+}
 
+header .principal .contenedor #btnBuscar {
+    width: 65%;
+    background-position-x: 90%;
+    font-size: 1.6rem;
+}
+
+header .principal .inicio_sesion .login {
+    font-size: 1.5rem;
+    font-weight: 600;    
+}
+
+main .destaque {
+    height: 20rem;           
+}
+
+main .destaque .texto {
+    height: 100rem;
+    gap: 1rem;
+    padding-top: 6rem;
+    
+}
+
+main .destaque .texto h1 {
+    font-size: 4rem;
+    
+}
+
+main .destaque .texto h4 {
+    font-size: 1.5rem;
+    
+}
+
+main .destaque .texto .btn button {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+main .contenedor .productos .card {
+    @media (min-width: 600px) {
+        width: 25%;
+    }
+     
+}
+
+/* Enlaces */
+footer .formulario .menu_categorias a {
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+   
+}
+
+/* Footer Menu */
+footer .formulario .menu_footer .titulo {
+    font-size: 1.6rem;
+    
+}
+
+footer .formulario .menu_footer .menu_input .nombre {
+    width: 90%;
+    
+}
+
+footer .formulario .menu_footer .menu_input textarea {
+    width: 90%;
+    height: 10rem;
+       
+}
+
+footer .formulario .menu_footer .menu_input .btn {
+    height: 4rem;
+    
+}
         
         
             

@@ -121,13 +121,12 @@ header .principal .inicio_sesion .login {
     border: none;
     border-radius: 0.3rem;
     border: 1px solid var(--azul-destaque);
-    color: #183864;
+    color: var(--azul-destaque);
     display: flex;
     align-items: center;
     font-size: 1.3rem;
     font-weight: 500;
     justify-content: center;
-    transition: uppercase;
 }
 
 header .principal .inicio_sesion .login:hover {
@@ -145,7 +144,7 @@ main {
 /* main Header */
 main .destaque {
     width: 100%;
-    height: 10.8rem;
+    height: 12.8rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -162,24 +161,32 @@ main .destaque .texto {
     height: 8rem;
     display: flex;
     justify-content: left;
-    /* align-items: flex-start; */
     color: var(--texto-destaque);
-    font-size: 1.2rem;
     flex-direction: column;
     gap: 0.7rem;
     padding: 2rem;
+    @media (min-width: 600px) {
+        gap: 1rem;
+    }
 }
 
 main .destaque .texto h1 {
     font-size: 1.8rem;
+    @media (min-width: 600px) {
+        font-size: 2.2rem;
+        
+    }
 }
 
 main .destaque .texto h4 {
     font-size: 1.1rem;
+    @media (min-width: 600px) {
+        font-size: 1.3rem;
+    }
 }
 
 /* btn */
-main .destaque .texto button {
+main .destaque .texto .btn button {
     background-color: var(--azul-destaque);
     border: none;
     border-radius: 0.5rem;
@@ -187,28 +194,33 @@ main .destaque .texto button {
     font-size: 1rem;
     outline: none;
     padding: 0.8rem;
+    @media (min-width: 600px) {
+        height: 3.7rem;
+        font-size: 1.2rem;
+    }
 
 }
 
 /* main */
-main .star_wars {
-    width: 100%;
+/* main .star_wars { */
+    /* width: 100%; */
     /* height: 100vh; */
-    display: flex;
+    /* display: flex;
     justify-content: left;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 2rem;
-}
+} */
 
-main .star_wars .contenedor {
+main .contenedor {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    padding: 2rem;
 }
 
-main .star_wars .contenedor .prod_titulo {
+main .contenedor .prod_titulo {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -216,18 +228,24 @@ main .star_wars .contenedor .prod_titulo {
     
 }
 
-main .star_wars .contenedor .prod_titulo .titulo {
+main .contenedor .prod_titulo .titulo {
     font-size: 1.5rem;
     font-weight: 600;
+    @media (min-width: 600px) {
+        font-size: 2rem;
+    }
 }
 
-main .star_wars .contenedor .prod_titulo .mostrar_mas {
+main .contenedor .prod_titulo .mostrar_mas {
     font-size: 1.2rem;
     color: var(--azul-destaque);
     gap: 1.5rem;
+    @media (min-width: 600px) {
+        font-size: 1.5rem;
+    }
 }
 
-main .star_wars .contenedor .prod_titulo .mostrar_mas .verTodo {
+main .contenedor .prod_titulo .mostrar_mas .verTodo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,7 +264,10 @@ main .contenedor .productos {
 
 main .contenedor .productos .card {
     width: 50%;
-   
+    @media (min-width: 600px) {
+        width: 30%;
+    }
+     
 }
 
 main .contenedor .productos .contenedor_productos {
@@ -267,7 +288,10 @@ main .contenedor .productos .contenedor_img {
 
 main .contenedor .productos .contenedor_img .imagenes {
     width: 90%;
+    height: 200px;
     border-radius: 1rem;
+    object-fit: contain;
+   
 }
 
 main .contenedor .productos .descripcion {
@@ -314,28 +338,44 @@ footer .formulario .contenedor {
 
 footer .formulario .contenedor .logo_footer {
     width: 80%;
+    @media (min-width: 600px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 footer .formulario .contenedor .logo_footer img {
     width: 5rem;
+    @media (min-width: 600px) {
+        width: 7rem;
+        display: flex;
+    }
 }
 
 /* Enlaces */
 footer .formulario .menu_categorias {
     width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
     text-align: left;
        
 }
 
 footer .formulario .menu_categorias a {
-    color: #183864;
+    color: var(--azul-destaque);
     font-size: 1.15rem;
-    line-height: 1.5rem;
+    line-height: 2.2rem;
+    @media (min-width: 600px) {
+        font-size: 1.4rem;
+    }
 }
 
 /* Footer Menu */
 footer .formulario .menu_footer {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -344,8 +384,11 @@ footer .formulario .menu_footer {
 
 footer .formulario .menu_footer .titulo {
     font-size: 1.4rem;
-    color: #183864;
+    color: var(--azul-destaque);
     text-align: center;
+    @media (min-width: 600px) {
+        font-size: 1.6rem;
+    }
 }
 
 footer .formulario .menu_footer .menu_input {
@@ -387,6 +430,7 @@ footer .formulario .menu_footer .menu_input .btn {
     outline: none;
 }
 
+/* Copy */
 footer .copyright {
     width: 100%;
     display: flex;
