@@ -1,5 +1,6 @@
 header {
     height: 30%;
+   
 }
 
 header .principal .contenedor .logo_img img {
@@ -29,8 +30,7 @@ main .destaque .texto {
 }
 
 main .destaque .texto h1 {
-    font-size: 4rem;
-    
+    font-size: 4rem;    
 }
 
 main .destaque .texto h4 {
@@ -46,6 +46,7 @@ main .destaque .texto .btn button {
     padding: 1.5rem;
 }
 
+/* Productos */
 main .contenedor .productos .card {
     @media (min-width: 600px) {
         width: 25%;

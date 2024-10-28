@@ -1,13 +1,58 @@
 header {
     height: 45%;
+    
 }
 
-header .principal .contenedor .logo_img img {
-    width: 6.5rem;    
+header .principal .contenedor {
+    flex-direction: row;
+}
+
+header .principal .contenedor .logo_img {
+    width: 30%;
+    display: flex;
+    align-items: center;
 }
 
 header .principal .contenedor #btnBuscar {
-    width: 65%;
-    background-position-x: 90%;
+    width: 50%;
+    font-size: 1.8rem;
+}
+
+/* Main Header */
+main .destaque .texto {
+    padding-top: 3rem;
+}
+
+main .destaque .texto h1 {
+    padding-bottom: 2rem;
+    
+}
+
+main .destaque .texto h4 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    
+}
+
+main .destaque .texto .btn button {
+    height: 5rem;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+}
+
+main .contenedor .prod_titulo .titulo {
+    font-size: 2.5rem;
+      
+}
+
+main .contenedor .prod_titulo .mostrar_mas {
+    font-size: 2rem;
+       
+}
+
+/* Productos */
+main .contenedor .productos .descripcion {
     font-size: 1.6rem;
+    padding-top: 1rem;
+    text-align: center;
 }

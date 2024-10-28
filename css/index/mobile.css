@@ -101,7 +101,7 @@ header .principal .contenedor #btnBuscar {
     font-size: 1.2rem;
     font-weight: 500;
     outline: none;
-    padding: 1rem;    
+    padding: 2rem;    
 
 }
 
@@ -247,6 +247,7 @@ main .contenedor .prod_titulo .mostrar_mas {
 
 main .contenedor .prod_titulo .mostrar_mas .verTodo {
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -289,7 +290,7 @@ main .contenedor .productos .contenedor_img {
 main .contenedor .productos .contenedor_img .imagenes {
     width: 90%;
     height: 200px;
-    border-radius: 1rem;
+    border-radius: 10%;
     object-fit: contain;
    
 }
@@ -417,6 +418,7 @@ footer .formulario .menu_footer .menu_input textarea {
     cursor: pointer;
     outline: none;
     padding: 1rem;
+    resize: none;
 }
 
 footer .formulario .menu_footer .menu_input .btn {
