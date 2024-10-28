@@ -1,48 +1,70 @@
+:root {
+    --bg-color: #ebebeb;
+    --input-placeholder: #4d4d4d;
+    --input-bg: #efefef;
+    --texto-destaque: #fff;
+    --azul-destaque: #2a7ae4;
+    --bg-contacto: #eaf2fd;
+   /* font-family: "Open Sans", sans-serif; */
+}
+
 * {
     margin: 0;
     padding: 0;
- 
+    box-sizing: border-box; /*esta propiedad nos sirve para que tome los valores que estamos declarando de la altura y anchura y no nos la sume*/ 
+}
+
+html {
+    font-size: 62.5%; /*para que el 1rem sea igual a 10px*/
 }
 
 body {
-      box-sizing: border-box; /*esta propiedad nos sirve para que tome los valores que estamos declarando de la altura y anchura y no nos la sume*/
+    width: 100%;
+    height: 100vh;
       font-family: "Open Sans", sans-serif;
-      font-size: 16px;
+      font-size: 1.6rem;
       background-color: var(--bg-color);
-      scroll-behavior: smooth;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      
   }
 
-  .contenedor {
-    margin: 100px auto;
-    width: 400px;
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-  .titulo {
-    font-size: 24px;
+.titulo {
+    width: 100%;
+    color: var(--input-placeholder);
+    font-size: 2.4rem;
     line-height: 34px;
-    margin-bottom: 20px ;
-    font-weight: 400 bold;
-    color: #4d4d4d;
+    font-weight: 900;
+    padding-bottom: 2rem;
     text-align: center;
 }
-  
 
 .form_InicioSesion {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    line-height: 25px;
-    
-    
-    
 }
 
 .form_InicioSesion input[type=text],
 .form_InicioSesion input[type=password] {
+    border: none;
     border: 2px solid #cecece;
     border-radius: 5px;
-    padding: 15px 20px;
-    font-size: 25px;
-    color: #a4a4a4;
+    padding: 1.5rem 2rem;
+    font-size: 2.5rem;
+    color: var(--bg-color);
+    outline: none;
 }
 
 .form_InicioSesion input[type=text],
@@ -57,15 +79,13 @@ body {
 }
 
 .form_InicioSesion .btn {
-    margin: auto;
-    background: #3895ea;
-    color: #fff;
+    background: var(--azul-destaque);
+    color: var(--input-bg);
     border: none;
-    font-size: 25px;
-    margin-left: -2px;
-    border-radius: 3px;
-    padding: 15px 40px;
-    width: 100%;
+    font-size: 2.5rem;
+    border-radius: 0.3rem;
+    padding: 1.5rem 4rem;
+    width: 70%;
     cursor: pointer;
 
 }
