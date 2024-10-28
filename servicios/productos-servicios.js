@@ -7,7 +7,7 @@ export const productoServices = {
     listaProductos
 };
 
-const listaProductosConsola = () => fetch("http://localhost:3000/productos_consola").then(respuesta => respuesta.json());
+const listaProductosConsola = () => fetch("http://localhost:3000/consola").then(respuesta => respuesta.json());
 
 export const productoService = {
 

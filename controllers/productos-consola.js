@@ -24,17 +24,23 @@ const nuevoProducto = (name, price, imageUrl) => {
 
 const producto = document.querySelector("[consolas]");
 
-const render = async (productos, searchterm) => {
+const render = async (productos) => {
     try {
         const listaProductosConsola = await productoService.listaProductosConsola();
+        //console.log(listaProductosConsola);
+        
         const productosContainer = document.querySelector("[consolas]");
         productosContainer.innerHTML = ""; // Limpia los productos anteriores
 
-        const filteredProductos = listaProductosConsola.filter(producto =>
-            producto.name.toLowerCase().includes(searchTerm.toLowerCase())
-        );
+        // const filteredProductos = listaProductosConsola.filter(producto =>
+        //     //console.log(producto.name.toLowerCase())
+        //     //console.log('Search Term:', searchterm)
+                        
+        //     producto.name
+        // );
 
-        filteredProductos.forEach((elemento) => {
+        listaProductosConsola.forEach((elemento) => {
+                    
             productosContainer.appendChild(nuevoProducto(
                 elemento.name,
                 elemento.price,
