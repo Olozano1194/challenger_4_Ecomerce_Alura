@@ -23,11 +23,19 @@ const nuevoProducto = (name, price, imageUrl) => {
 };
 
 const producto = document.querySelector("[diversos]");
+const verTodoButton = document.querySelector('.verTodosJs');
 
-const render = async () => {
+const render = async (mostrarTodos = false) => {
     try {
         const listaProductosDiversos = await productoServiceDiversos.listaProductosDiversos();
-        listaProductosDiversos.forEach((elemento) => {
+
+        //llamamos a los primeros 8 productos
+        const productosLimitados = mostrarTodos ? listaProductosDiversos: listaProductosDiversos.slice(0, 8);
+
+        //Limpiamos el contenedor antes de rendesizar
+        producto.innerHTML = "";
+
+        productosLimitados.forEach((elemento) => {
             producto.appendChild(nuevoProducto(
                     elemento.name,
                     elemento.price, 
@@ -41,3 +49,8 @@ const render = async () => {
 };
 
 render();
+
+//Agreganis un evento clic para el btn ver todo
+verTodoButton.addEventListener('click', () => {
+    render(true); //Mostramos todos los productos
+});

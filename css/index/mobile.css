@@ -52,6 +52,10 @@ button {
     cursor: pointer;
 }
 
+.oculto {
+    display: none;
+}
+
 /* header */
 header {
     width: 100%;
@@ -432,6 +436,11 @@ footer .formulario .menu_footer .menu_input .btn {
     outline: none;
 }
 
+footer .formulario .menu_footer .menu_input .btn:hover {
+    background-color: #28599e;
+    transform: scale(1.1);
+}
+
 /* Copy */
 footer .copyright {
     width: 100%;
@@ -441,8 +450,7 @@ footer .copyright {
     color: #183864;
     font-size: 1.7rem;
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-
+    padding-bottom: 3rem;
 }
 
 

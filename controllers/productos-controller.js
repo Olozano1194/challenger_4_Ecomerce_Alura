@@ -18,16 +18,23 @@ const nuevoProducto = (name, price, imageUrl) => {
         
     card.innerHTML = contenido;
     card.classList.add("card");
-
     return card;
 };
 
 const producto = document.querySelector("[datos-productos]");
+const verTodoButton = document.getElementById('verTodoJs');
 
-const render = async () => {
+const render = async (mostrarTodos = false) => {
     try {
         const listaProductos = await productoServices.listaProductos();
-        listaProductos.forEach((elemento) => {
+
+        //llamamos a los primeros 8 productos
+        const productosLimitados = mostrarTodos ? listaProductos: listaProductos.slice(0, 8);
+
+        //Limpiamos el contenedor antes de rendesizar
+        producto.innerHTML = "";
+
+        productosLimitados.forEach((elemento) => {
             producto.appendChild(nuevoProducto(
                     elemento.name,
                     elemento.price, 
@@ -40,4 +47,10 @@ const render = async () => {
     }
 };
 
+//Inicialmente se muestra solo los primeros 8 productos
 render();
+
+//Agreganis un evento clic para el btn ver todo
+verTodoButton.addEventListener('click', () => {
+    render(true); //Mostramos todos los productos
+});

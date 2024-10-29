@@ -23,14 +23,15 @@ const nuevoProducto = (name, price, imageUrl) => {
 };
 
 const producto = document.querySelector("[consolas]");
+const verTodoButton = document.querySelector('.verTodosConsola');
 
-const render = async (productos) => {
+const render = async (mostrarTodos = false) => {
     try {
         const listaProductosConsola = await productoService.listaProductosConsola();
-        //console.log(listaProductosConsola);
+        const productosLimitados = mostrarTodos ? listaProductosConsola: listaProductosConsola.slice(0, 8);
         
         const productosContainer = document.querySelector("[consolas]");
-        productosContainer.innerHTML = ""; // Limpia los productos anteriores
+        producto.innerHTML = ""; // Limpia los productos anteriores
 
         // const filteredProductos = listaProductosConsola.filter(producto =>
         //     //console.log(producto.name.toLowerCase())
@@ -39,7 +40,7 @@ const render = async (productos) => {
         //     producto.name
         // );
 
-        listaProductosConsola.forEach((elemento) => {
+        productosLimitados.forEach((elemento) => {
                     
             productosContainer.appendChild(nuevoProducto(
                 elemento.name,
@@ -52,13 +53,16 @@ const render = async (productos) => {
     }
 };
 
-const btnBuscar = document.querySelector('input', () => {
-    const searchTerm = btnBuscar.value;
-    render('consolas', '');
-});
+// const btnBuscar = document.querySelector('input', () => {
+//     const searchTerm = btnBuscar.value;
+//     render('consolas', '');
+// });
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    render('star_wars');
+render();
+
+//Agreganis un evento clic para el btn ver todo
+verTodoButton.addEventListener('click', () => {
+    render(true); //Mostramos todos los productos
 });
 
