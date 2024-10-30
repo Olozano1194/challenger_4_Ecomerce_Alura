@@ -52,10 +52,6 @@ button {
     cursor: pointer;
 }
 
-.oculto {
-    display: none;
-}
-
 /* header */
 header {
     width: 100%;
@@ -205,17 +201,12 @@ main .destaque .texto .btn button {
 
 }
 
-/* main */
-/* main .star_wars { */
-    /* width: 100%; */
-    /* height: 100vh; */
-    /* display: flex;
-    justify-content: left;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 2rem;
-} */
+main .destaque .texto .btn button:hover {
+    background-color: #28599e;
+    transform: scale(1.1);
+}
 
+/* main */
 main .contenedor {
     width: 100%;
     display: flex;
