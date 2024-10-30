@@ -18,9 +18,9 @@ El proyecto consiste en una aplicación web que permite a los usuarios navegar p
 1. Clona el repositorio en tu entorno de desarrollo local.
 2. Instala npm,
 
-     - ```bash
-        npm install
-      ```
+     -  ```bash
+          npm install
+        ```
 3. Si en el archivo package.json no aparece la dependiencia de json-server, toca instalarla de manera local:
 
     - ```bash
